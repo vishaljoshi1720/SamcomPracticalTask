@@ -70,6 +70,35 @@ const LoginScreen = ({}) => {
             onLogin={onLogin}
             disableButton={name.length === 0 || job.length === 0}
           />
+          <View style={{flex: 1, flexDirection: 'row'}}>
+            <View
+              style={{
+                flex: 0.2,
+                height: 100,
+                width: 100,
+                borderRadius: 50,
+                backgroundColor: '#de530d',
+                alignSelf: 'flex-end',
+                marginTop: 50,
+                position: 'absolute',
+                bottom: -50,
+                left: -30,
+              }}
+            />
+            <View
+              style={{
+                height: 200,
+                width: 200,
+                borderRadius: 100,
+                backgroundColor: '#de530d',
+                alignSelf: 'flex-end',
+                marginTop: 50,
+                position: 'absolute',
+                bottom: -70,
+                right: -90,
+              }}
+            />
+          </View>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -83,7 +112,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   subConatiner: {
-    flex: 0.5,
+    flex: 0.7,
     alignItems: 'center',
   },
   mainText: {
